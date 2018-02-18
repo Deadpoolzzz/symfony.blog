@@ -1,5 +1,5 @@
 puphpet/config-custom.yaml
-.idea/git rm -r --cached
+.idea/
 /.web-server-pid
 /app/config/parameters.yml
 /build/
