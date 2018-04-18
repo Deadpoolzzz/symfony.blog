@@ -22,3 +22,4 @@ puphpet/config-custom.yaml
 /.vagrant
 Vagrantfile
 LICENSE
+.DS_Store
