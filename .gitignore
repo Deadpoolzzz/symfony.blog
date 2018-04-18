@@ -20,3 +20,5 @@ puphpet/config-custom.yaml
 /puphpet.zip
 /puphpet/*
 /.vagrant
+Vagrantfile
+LICENSE
