@@ -15,48 +15,10 @@ BloggerBlogBundle_contact:
     defaults: { _controller: "BloggerBlogBundle:Page:contact" }
     requirements:
         methods:  GET|POST
-BloggerBlogBundle_content:
-    path:  /show
-    defaults: { _controller: "BloggerBlogBundle:Html:showContent" }
+
+BloggerBlogBundle_blog_show:
+    path:  /{id}
+    defaults: { _controller: "BloggerBlogBundle:Blog:show" }
     requirements:
-        methods:  GET|POST
-BloggerBlogBundle_string:
-    path: /string
-    defaults: { _controller: "BloggerBlogBundle:String:index"}
-    requirements:
-        methods:  GET|POST
-BloggerBlogBundle_stringin:
-    path: /stringin
-    defaults: { _controller: "BloggerBlogBundle:String:stringInString"}
-    requirements:
-        methods:  GET|POST
-BloggerBlogBundle_lastindex:
-    path: /lastindex
-    defaults: { _controller: "BloggerBlogBundle:String:lastIndex"}
-    requirements:
-        methods:  GET|POST
-BloggerBlogBundle_slices:
-    path: /slices
-    defaults: { _controller: "BloggerBlogBundle:String:slices"}
-    requirements:
-        methods:  GET|POST
-BloggerBlogBundle_replace:
-    path: /replace
-    defaults: { _controller: "BloggerBlogBundle:String:replace"}
-    requirements:
-        methods:  GET|POST
-BloggerBlogBundle_upper:
-    path: /upper
-    defaults: { _controller: "BloggerBlogBundle:String:upper"}
-    requirements:
-        methods:  GET|POST
-BloggerBlogBundle_explode:
-    path: /explode
-    defaults: { _controller: "BloggerBlogBundle:String:explode"}
-    requirements:
-        methods:  GET|POST
-BloggerBlogBundle_concat:
-    path: /concat
-    defaults: { _controller: "BloggerBlogBundle:String:concat"}
-    requirements:
-        methods:  GET|POST
+        methods:  GET
+        id: \d+
